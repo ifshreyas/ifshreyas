@@ -1,134 +1,147 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
   <defs>
-    <style>
+    <style><![CDATA[
+      /* Colors and font */
       .bg { fill: #06121a; }
-      .panel { fill: #071826; stroke: #102635; stroke-width:2; rx:8; ry:8; }
-      .mono { font-family: "Fira Code", "Menlo", "Courier New", monospace; font-size:14px; }
+      .panel { fill: #071826; stroke: #0e2a34; stroke-width:2; rx:10; ry:10; }
+      .mono { font-family: "Fira Code", "Courier New", monospace; font-size:14px; }
       .title { font-size:16px; font-weight:700; fill:#ffd580; }
       .username { fill:#ffa94d; font-weight:700; }
       .sep { fill:#0fb6ff; }
-      .label { fill:#7bd389; }
-      .field { fill:#cfe8ff; }
-      .dim { fill:#6b7785; }
-      .accent1 { fill:#ffb86b; } /* orange/yellow */
-      .accent2 { fill:#4fd2ff; } /* cyan */
-      .accent3 { fill:#ff7ab6; } /* magenta/pink */
-      .dot { fill:#334b5a; }
-      .boxline { stroke:#112630; stroke-width:1; }
-    </style>
+      .label { fill:#72d386; }   /* green labels */
+      .value { fill:#cfe8ff; }   /* pale value text */
+      .muted { fill:#5f6d76; }   /* separators / dim text */
+      .accent1 { fill:#ffb86b; } /* orange values */
+      .accent2 { fill:#4fd2ff; } /* cyan values */
+      .accent3 { fill:#ff7ab6; } /* pink values */
+      ]]></style>
   </defs>
 
   <!-- Background -->
-  <rect class="bg" x="0" y="0" width="820" height="520" rx="0" ry="0" />
+  <rect class="bg" x="0" y="0" width="900" height="540" rx="0" ry="0"/>
 
-  <!-- Panel -->
-  <g transform="translate(20,20)">
-    <rect class="panel" x="0" y="0" width="780" height="480" rx="10" ry="10" />
+  <!-- Outer panel -->
+  <g transform="translate(30,20)">
+    <rect class="panel" x="0" y="0" width="840" height="500" rx="8" ry="8"/>
 
-    <!-- Header line -->
-    <text class="mono title" x="18" y="34"> _________________________________</text>
-    <text class="mono" x="18" y="56">
+    <!-- header -->
+    <text class="mono title" x="18" y="36"> _________________________________</text>
+    <text class="mono" x="18" y="60">
       <tspan class="username">ifshreyas@dev</tspan>
-      <tspan class="dim">  -----------------</tspan>
+      <tspan class="muted">  -----------------</tspan>
     </text>
 
-    <!-- dashed separator -->
-    <text class="mono dim" x="18" y="86">|---------------------------------|</text>
+    <!-- thin separator -->
+    <text class="mono muted" x="18" y="86">|---------------------------------|</text>
 
-    <!-- System block -->
-    <text class="mono label" x="18" y="112">| OS: </text>
-    <text class="mono field" x="150" y="112">Windows 10, Android 14, Linux</text>
+    <!-- Layout constants:
+         left column label X = 24
+         left column value X = 200
+         right column label X = 420
+         right column value X = 620
+         baseline start Y = 110
+         line height = 22
+    -->
 
-    <text class="mono label" x="18" y="136">| Uptime: </text>
-    <text class="mono field" x="150" y="136">22 years, 5 months, 29 days</text>
+    <!-- Left column content -->
+    <g class="mono">
+      <!-- baseline and spacing -->
+      <!-- Row 0 -->
+      <text x="24" y="110" class="label">| OS:</text>
+      <text x="200" y="110" class="value">Windows 10, Android 14, Linux</text>
 
-    <text class="mono label" x="18" y="160">| Host: </text>
-    <text class="mono field" x="150" y="160">TTM Technologies, Inc.</text>
+      <!-- Row 1 -->
+      <text x="24" y="132" class="label">| Uptime:</text>
+      <text x="200" y="132" class="value">22 years, 5 months, 29 days</text>
 
-    <text class="mono label" x="18" y="184">| Kernel: </text>
-    <text class="mono field" x="150" y="184">CAM (Computer Aided Manufacturing) Operator</text>
+      <!-- Row 2 -->
+      <text x="24" y="154" class="label">| Host:</text>
+      <text x="200" y="154" class="value">TTM Technologies, Inc.</text>
 
-    <text class="mono label" x="18" y="208">| IDE: </text>
-    <text class="mono field" x="150" y="208">IDEA 2023.3.2, VSCode 1.96.0</text>
+      <!-- Row 3 -->
+      <text x="24" y="176" class="label">| Kernel:</text>
+      <text x="200" y="176" class="value">CAM (Computer Aided Manufacturing) Operator</text>
 
-    <!-- About block border -->
-    <text class="mono dim" x="18" y="236">|---------------------------------|</text>
-    <text class="mono label" x="18" y="260">| About:</text>
+      <!-- Row 4 -->
+      <text x="24" y="198" class="label">| IDE:</text>
+      <text x="200" y="198" class="value">IDEA 2023.3.2, VSCode 1.96.0</text>
 
-    <!-- About text (wrapped manually to preserve monospace layout) -->
-    <text class="mono field" x="18" y="282">
-      <tspan x="18" dy="0">|  A software developer driven by curiosity, ambition, and the desire</tspan>
-      <tspan x="18" dy="18">|  to build things that stand out. From AI agents and web applications</tspan>
-      <tspan x="18" dy="18">|  to operating system experiments, I enjoy turning bold ideas into</tspan>
-      <tspan x="18" dy="18">|  real projects while constantly learning and pushing my limits.</tspan>
-    </text>
+      <!-- divider -->
+      <text x="18" y="222" class="muted">|---------------------------------|</text>
 
-    <text class="mono dim" x="18" y="360">|---------------------------------|</text>
+      <!-- About header -->
+      <text x="24" y="246" class="label">| About:</text>
 
-    <!-- Languages -->
-    <text class="mono label" x="18" y="382">| Languages.Programming: </text>
-    <text class="mono accent1" x="300" y="382">Java, Python, JavaScript, C++</text>
+      <!-- About wrapped lines (kept same left value X as labels to mimic terminal look) -->
+      <text x="24" y="268" class="value">
+        <tspan x="24" dy="0">|  A software developer driven by curiosity, ambition, and the desire</tspan>
+        <tspan x="24" dy="20">|  to build things that stand out. From AI agents and web applications</tspan>
+        <tspan x="24" dy="20">|  to operating system experiments, I enjoy turning bold ideas into</tspan>
+        <tspan x="24" dy="20">|  real projects while constantly learning and pushing my limits.</tspan>
+      </text>
 
-    <text class="mono label" x="18" y="406">| Languages.Computer: </text>
-    <text class="mono accent2" x="300" y="406">HTML, CSS, JSON, LaTeX, YAML</text>
+      <text x="18" y="356" class="muted">|---------------------------------|</text>
 
-    <text class="mono label" x="18" y="430">| Languages.Real: </text>
-    <text class="mono field" x="300" y="430">English, Spanish</text>
+      <!-- Languages rows -->
+      <text x="24" y="378" class="label">| Languages.Programming:</text>
+      <text x="300" y="378" class="accent1">Java, Python, JavaScript, C++</text>
 
-    <text class="mono dim" x="18" y="454">|---------------------------------|</text>
+      <text x="24" y="400" class="label">| Languages.Computer:</text>
+      <text x="300" y="400" class="accent2">HTML, CSS, JSON, LaTeX, YAML</text>
 
-    <!-- Hobbies & Contact on the right -->
-    <g transform="translate(420,90)">
-      <text class="mono label" x="0" y="0">| Hobbies.Software: </text>
-      <text class="mono accent3" x="220" y="0">Minecraft Modding, iOS Jailbreaking</text>
+      <text x="24" y="422" class="label">| Languages.Real:</text>
+      <text x="300" y="422" class="value">English, Spanish</text>
 
-      <text class="mono label" x="0" y="26">| Hobbies.Hardware: </text>
-      <text class="mono accent1" x="220" y="26">Overclocking, Undervolting</text>
-
-      <text class="mono dim" x="0" y="52">|---------------------------------|</text>
-
-      <text class="mono label" x="0" y="78">| Contact</text>
-
-      <text class="mono field" x="0" y="104">| Email.Personal: </text>
-      <text class="mono accent2" x="160" y="104">agranntnmac@gmail.com</text>
-
-      <text class="mono field" x="0" y="128">| Email.Personal: </text>
-      <text class="mono accent2" x="160" y="128">andrew@grant.software</text>
-
-      <text class="mono field" x="0" y="152">| Email.Work: </text>
-      <text class="mono accent2" x="160" y="152">Andrew.Grant@ttmtech.com</text>
-
-      <text class="mono field" x="0" y="176">| LinkedIn: </text>
-      <text class="mono accent3" x="160" y="176">AndrewGrant</text>
-
-      <text class="mono field" x="0" y="200">| Discord: </text>
-      <text class="mono accent3" x="160" y="200">andrew0rant</text>
-
-      <text class="mono dim" x="0" y="224">|---------------------------------|</text>
-
-      <text class="mono label" x="0" y="252">| GitHub Stats:</text>
-
-      <text class="mono field" x="0" y="278">| Repos: </text>
-      <tspan class="accent1" x="120" y="278">95</tspan>
-      <text class="mono dim" x="170" y="278"> {Contributed: 133} | Stars:</text>
-      <tspan class="accent2" x="360" y="278">342</tspan>
-
-      <text class="mono field" x="0" y="302">| Commits: </text>
-      <tspan class="accent1" x="120" y="302">2,116</tspan>
-      <text class="mono dim" x="200" y="302"> | Followers:</text>
-      <tspan class="accent2" x="335" y="302">196</tspan>
-
-      <text class="mono field" x="0" y="326">| Lines of Code on GitHub: </text>
-      <tspan class="accent1" x="230" y="326">446,276</tspan>
-      <text class="mono dim" x="360" y="326"> (523,178+, 76,902--)</text>
+      <text x="18" y="446" class="muted">|---------------------------------|</text>
     </g>
 
-    <!-- Bottom border -->
-    <text class="mono dim" x="18" y="504">|__________________________________|</text>
+    <!-- Right column content -->
+    <g class="mono">
+      <text x="420" y="110" class="label">| Hobbies.Software:</text>
+      <text x="620" y="110" class="accent3">Minecraft Modding, iOS Jailbreaking</text>
 
-    <!-- Small decorative dots on left to mimic original art -->
-    <text class="mono dot" x="6" y="40">.</text>
-    <text class="mono dot" x="6" y="60">.</text>
-    <text class="mono dot" x="6" y="80">.</text>
+      <text x="420" y="132" class="label">| Hobbies.Hardware:</text>
+      <text x="620" y="132" class="accent1">Overclocking, Undervolting</text>
+
+      <text x="414" y="156" class="muted">|---------------------------------|</text>
+
+      <text x="420" y="178" class="label">| Contact</text>
+
+      <text x="420" y="200" class="label">| Email.Personal:</text>
+      <text x="620" y="200" class="value">agranntnmac@gmail.com</text>
+
+      <text x="420" y="222" class="label">| Email.Personal:</text>
+      <text x="620" y="222" class="value">andrew@grant.software</text>
+
+      <text x="420" y="244" class="label">| Email.Work:</text>
+      <text x="620" y="244" class="value">Andrew.Grant@ttmtech.com</text>
+
+      <text x="420" y="266" class="label">| LinkedIn:</text>
+      <text x="620" y="266" class="accent3">AndrewGrant</text>
+
+      <text x="420" y="288" class="label">| Discord:</text>
+      <text x="620" y="288" class="accent3">andrew0rant</text>
+
+      <text x="414" y="312" class="muted">|---------------------------------|</text>
+
+      <text x="420" y="334" class="label">| GitHub Stats:</text>
+
+      <text x="420" y="356" class="label">| Repos:</text>
+      <text x="520" y="356" class="accent1">95</text>
+      <text x="560" y="356" class="muted"> {Contributed: 133} | Stars:</text>
+      <text x="720" y="356" class="accent2">342</text>
+
+      <text x="420" y="378" class="label">| Commits:</text>
+      <text x="520" y="378" class="accent1">2,116</text>
+      <text x="600" y="378" class="muted"> | Followers:</text>
+      <text x="720" y="378" class="accent2">196</text>
+
+      <text x="420" y="400" class="label">| Lines of Code on GitHub:</text>
+      <text x="620" y="400" class="accent1">446,276</text>
+      <text x="720" y="400" class="muted"> (523,178+, 76,902--)</text>
+    </g>
+
+    <!-- bottom border -->
+    <text class="mono muted" x="18" y="482">|__________________________________|</text>
   </g>
 </svg>
