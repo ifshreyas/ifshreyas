@@ -1,13 +1,13 @@
-# Hey there :wave:
-
 <img src="https://raw.githubusercontent.com/sagar-viradiya/sagar-viradiya/master/resources/banner.png" alt="Hello world">
 
 ## About me
 
-Hi there 👋. I’m Sagar Viradiya, a skilled and results-driven Android Developer with a strong background in Android app development and a passion for crafting high-quality apps and libraries. With a keen eye for quality and a deep understanding of the Android ecosystem, I build solutions that are not only functional but also delightful. Besides my 9to5, I love to give back to the community by blogging, speaking, and open-sourcing my ideas. My love for community led me to Google Developer Expert for Android. If I’m not crafting app/library then probably wondering about the universe’s existence.
+Hey! I’m Shreyas, a Software Engineering student and developer who enjoys turning ideas into real, working software. I’m deeply interested in programming, cybersecurity, web development, game development, and building tools that solve practical problems. I spend a lot of my time experimenting with new technologies, developing personal projects, participating in hackathons, and understanding how things actually work behind the scenes rather than simply using them. I enjoy working on both serious engineering projects and creative experiments — from web applications and security tools to game modifications and interactive experiences.
+
+## Tech Stack
+
+My primary programming language is Python, which I use for backend development, automation, data processing, scripting, cybersecurity experiments, and problem solving. I also work with JavaScript for web development and use C#/.NET for game development and GTA V modding projects. For web development, I work with HTML, CSS, JavaScript, React, Node.js, Vite, Tailwind CSS, and Flask, with PostgreSQL for relational database work. I also use tools such as Postman, Git, GitHub, npm, VS Code, PyCharm, WebStorm, and Rider as part of my development workflow.
 
 ## Get in touch :coffee:
 
-- [Personal Blog](https://sagarviradiya.dev)
-- [LinkedIn](https://www.linkedin.com/in/sagarviradiya)
-- [Twitter](https://twitter.com/viradiya_sagar)
+- [LinkedIn](https://www.linkedin.com/in/shreyaspathakk)
