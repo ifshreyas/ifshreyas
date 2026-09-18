@@ -10,4 +10,4 @@ My primary programming language is Python, which I use for backend development, 
 
 ## Get in touch
 
-- [LinkedIn](https://www.linkedin.com/in/shreyaspathakk)ㅤㅤㅤㅤㅤ[Instagram](https://www.instagram.com/shreonit/)
+[LinkedIn](https://www.linkedin.com/in/shreyaspathakk)ㅤㅤㅤㅤ[Instagram](https://www.instagram.com/shreonit/)ㅤㅤㅤㅤ[HackerRank](https://www.hackerrank.com/profile/pathakshreyas04)
